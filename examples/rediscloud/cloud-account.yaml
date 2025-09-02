@@ -1,5 +1,5 @@
-apiVersion: rediscloud.redis.com/v1alpha1
-kind: CloudAccount
+apiVersion: cloud.redis.io/v1alpha1
+kind: Account
 metadata:
   name: example-cloud-account
 spec:

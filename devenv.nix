@@ -1,6 +1,16 @@
 { pkgs, lib, config, inputs, ... }:
 {
   languages.go.enable = true;
+  
+  # Python configuration with venv and uv
+  languages.python = {
+    enable = true;
+    venv.enable = true;
+    uv = {
+      enable = true;
+      sync.enable = true;
+    };
+  };
 
   packages = with pkgs; [
     # Building
@@ -19,9 +29,5 @@
     kubectl
     kubernetes-helm
     podman
-    
-    # For example validation
-    python3
-    python3Packages.pyyaml
   ];
 }

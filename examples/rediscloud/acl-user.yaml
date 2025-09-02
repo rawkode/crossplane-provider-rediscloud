@@ -1,5 +1,5 @@
-apiVersion: rediscloud.redis.com/v1alpha1
-kind: ACLUser
+apiVersion: acl.redis.io/v1alpha1
+kind: User
 metadata:
   name: example-acl-user
 spec:

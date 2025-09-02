@@ -1,5 +1,5 @@
-apiVersion: rediscloud.redis.com/v1alpha1
-kind: SubscriptionDatabase
+apiVersion: subscription.redis.io/v1alpha1
+kind: Database
 metadata:
   name: example-database
 spec:
