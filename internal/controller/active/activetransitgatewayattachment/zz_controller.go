@@ -26,7 +26,7 @@ import (
 )
 
 // Setup adds a controller that reconciles ActiveTransitGatewayAttachment managed resources.
-func Setup(mgr ctrl.Manager, o tjcontroller.Options) error {
+func Setup(mgr ctrl.Manager, o *tjcontroller.Options) error {
 	name := managed.ControllerName(v1alpha1.ActiveTransitGatewayAttachment_GroupVersionKind.String())
 	var initializers managed.InitializerChain
 	cps := []managed.ConnectionPublisher{managed.NewAPISecretPublisher(mgr.GetClient(), mgr.GetScheme())}

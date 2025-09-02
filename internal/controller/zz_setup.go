@@ -35,8 +35,8 @@ import (
 
 // Setup creates all controllers with the supplied logger and adds them to
 // the supplied manager.
-func Setup(mgr ctrl.Manager, o controller.Options) error {
-	for _, setup := range []func(ctrl.Manager, controller.Options) error{
+func Setup(mgr ctrl.Manager, o *controller.Options) error {
+	for _, setup := range []func(ctrl.Manager, *controller.Options) error{
 		role.Setup,
 		rule.Setup,
 		user.Setup,
