@@ -26,7 +26,7 @@ import (
 )
 
 // Setup adds a controller that reconciles ActiveSubscriptionRegions managed resources.
-func Setup(mgr ctrl.Manager, o *tjcontroller.Options) error {
+func Setup(mgr ctrl.Manager, o tjcontroller.Options) error {
 	name := managed.ControllerName(v1alpha1.ActiveSubscriptionRegions_GroupVersionKind.String())
 	var initializers managed.InitializerChain
 	cps := []managed.ConnectionPublisher{managed.NewAPISecretPublisher(mgr.GetClient(), mgr.GetScheme())}
