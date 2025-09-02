@@ -2,6 +2,7 @@
 Copyright 2022 Upbound Inc.
 */
 
+// Package config contains the provider configuration logic.
 package config
 
 import "github.com/crossplane/upjet/pkg/config"
@@ -15,13 +16,13 @@ var ExternalNameConfigs = map[string]config.ExternalName{
 	"rediscloud_acl_user": config.IdentifierFromProvider,
 
 	// Active-Active Resources
-	"rediscloud_active_active_subscription":                           config.IdentifierFromProvider,
-	"rediscloud_active_active_subscription_database":                  config.IdentifierFromProvider,
-	"rediscloud_active_active_subscription_peering":                   config.IdentifierFromProvider,
-	"rediscloud_active_active_subscription_regions":                   config.IdentifierFromProvider,
-	"rediscloud_active_active_transit_gateway_attachment":             config.IdentifierFromProvider,
-	"rediscloud_active_active_private_service_connect":                config.IdentifierFromProvider,
-	"rediscloud_active_active_private_service_connect_endpoint":       config.IdentifierFromProvider,
+	"rediscloud_active_active_subscription":                              config.IdentifierFromProvider,
+	"rediscloud_active_active_subscription_database":                     config.IdentifierFromProvider,
+	"rediscloud_active_active_subscription_peering":                      config.IdentifierFromProvider,
+	"rediscloud_active_active_subscription_regions":                      config.IdentifierFromProvider,
+	"rediscloud_active_active_transit_gateway_attachment":                config.IdentifierFromProvider,
+	"rediscloud_active_active_private_service_connect":                   config.IdentifierFromProvider,
+	"rediscloud_active_active_private_service_connect_endpoint":          config.IdentifierFromProvider,
 	"rediscloud_active_active_private_service_connect_endpoint_accepter": config.IdentifierFromProvider,
 
 	// Cloud Resources
@@ -32,12 +33,12 @@ var ExternalNameConfigs = map[string]config.ExternalName{
 	"rediscloud_essentials_subscription": config.IdentifierFromProvider,
 
 	// Private Service Connect Resources
-	"rediscloud_private_service_connect":                  config.IdentifierFromProvider,
-	"rediscloud_private_service_connect_endpoint":         config.IdentifierFromProvider,
+	"rediscloud_private_service_connect":                   config.IdentifierFromProvider,
+	"rediscloud_private_service_connect_endpoint":          config.IdentifierFromProvider,
 	"rediscloud_private_service_connect_endpoint_accepter": config.IdentifierFromProvider,
 
 	// Pro Subscription Resources
-	"rediscloud_subscription":         config.IdentifierFromProvider,
+	"rediscloud_subscription":          config.IdentifierFromProvider,
 	"rediscloud_subscription_database": config.IdentifierFromProvider,
 	"rediscloud_subscription_peering":  config.IdentifierFromProvider,
 

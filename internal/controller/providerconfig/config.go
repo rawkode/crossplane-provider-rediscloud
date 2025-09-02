@@ -2,6 +2,7 @@
 Copyright 2021 Upbound Inc.
 */
 
+// Package providerconfig contains the provider configuration controller.
 package providerconfig
 
 import (

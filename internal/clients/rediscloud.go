@@ -2,6 +2,7 @@
 Copyright 2021 Upbound Inc.
 */
 
+// Package clients contains the client configuration for the Redis Cloud provider.
 package clients
 
 import (

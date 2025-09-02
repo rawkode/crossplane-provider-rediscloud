@@ -2,6 +2,7 @@
 Copyright 2021 Upbound Inc.
 */
 
+// Package main contains the generator for the Crossplane Redis Cloud provider.
 package main
 
 import (

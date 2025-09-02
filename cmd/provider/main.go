@@ -2,6 +2,7 @@
 Copyright 2021 Upbound Inc.
 */
 
+// Package main contains the Crossplane Redis Cloud provider binary.
 package main
 
 import (

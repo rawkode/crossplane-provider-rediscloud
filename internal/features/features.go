@@ -2,6 +2,7 @@
  Copyright 2022 Upbound Inc
 */
 
+// Package features contains feature flags for the Redis Cloud provider.
 package features
 
 import (
