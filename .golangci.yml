@@ -70,6 +70,8 @@ linters:
           paramsOnly: true
         rangeValCopy:
           sizeThreshold: 32
+        hugeParam:
+          sizeThreshold: 200
 
 formatters:
   enable:
