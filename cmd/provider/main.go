@@ -149,6 +149,6 @@ func main() {
 		log.Info("Beta feature enabled", "flag", features.EnableBetaManagementPolicies)
 	}
 
-	kingpin.FatalIfError(controller.Setup(mgr, &o), "Cannot setup RedisCloud controllers")
+	kingpin.FatalIfError(controller.Setup(mgr, o), "Cannot setup RedisCloud controllers")
 	kingpin.FatalIfError(mgr.Start(ctrl.SetupSignalHandler()), "Cannot start controller manager")
 }
