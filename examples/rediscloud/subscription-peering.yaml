@@ -1,0 +1,15 @@
+apiVersion: rediscloud.redis.com/v1alpha1
+kind: SubscriptionPeering
+metadata:
+  name: example-peering
+spec:
+  forProvider:
+    subscriptionIdRef:
+      name: example-subscription
+    provider: AWS
+    region: us-east-1
+    awsAccountId: "123456789012"
+    vpcId: vpc-0123456789abcdef0
+    vpcCidr: 10.0.0.0/16
+  providerConfigRef:
+    name: default

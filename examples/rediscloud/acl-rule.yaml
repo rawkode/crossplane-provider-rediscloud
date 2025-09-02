@@ -1,0 +1,10 @@
+apiVersion: rediscloud.redis.com/v1alpha1
+kind: ACLRule
+metadata:
+  name: example-acl-rule
+spec:
+  forProvider:
+    name: read-only-rule
+    rule: "+@read ~*"
+  providerConfigRef:
+    name: default

@@ -206,6 +206,11 @@ local-deploy: build controlplane.up local.xpkg.deploy.provider.$(PROJECT_NAME)
 
 e2e: local-deploy uptest
 
+check-examples:
+	@$(INFO) Checking example manifests
+	@python3 scripts/check-examples.py package/crds examples || $(FAIL)
+	@$(OK) Example manifests are valid
+
 crddiff: $(UPTEST)
 	@$(INFO) Checking breaking CRD schema changes
 	@for crd in $${MODIFIED_CRD_LIST}; do \

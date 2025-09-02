@@ -11,10 +11,17 @@
     jq
     unzip
 
+    # Linting
+    golangci-lint
+
     # Testing
     kind
     kubectl
     kubernetes-helm
     podman
+    
+    # For example validation
+    python3
+    python3Packages.pyyaml
   ];
 }
