@@ -9,7 +9,8 @@
       "Bash(gh api:*)",
       "Bash(go:*)",
       "Bash(golangci-lint:*)",
-      "Bash(devenv shell:*)"
+      "Bash(devenv shell:*)",
+      "WebSearch"
     ],
     "deny": [],
     "ask": []
